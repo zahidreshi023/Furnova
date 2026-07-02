@@ -1,0 +1,16 @@
+{
+  "name": "furnova",
+  "version": "1.0.0",
+  "description": "Full-Stack Furniture E-Commerce Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "server": "npm start --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "npm run test --prefix server"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
